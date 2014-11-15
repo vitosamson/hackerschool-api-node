@@ -9,5 +9,9 @@
     "school"
   ],
   "author": "Vito <vslavilla@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "q": "^1.1.1",
+    "simple-oauth2": "^0.2.1"
+  }
 }
