@@ -1,0 +1,13 @@
+{
+  "name": "hs-api-node",
+  "version": "0.0.0",
+  "description": "Node wrapper for Hacker School API, including OAuth flow",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "hacker",
+    "school"
+  ],
+  "author": "Vito <vslavilla@gmail.com>",
+  "license": "MIT"
+}
