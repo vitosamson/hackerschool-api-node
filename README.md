@@ -15,7 +15,7 @@ This library is meant to be a node wrapper for the Hacker School API. It encapsu
 var hackerschool = require('hackerschool-api'),
     app = require('express')();
 
-var client = new hackerschool.Client();
+var client = hackerschool.client();
 
 var auth = hackerschool.auth({
   client_id: process.env.CLIENT_ID,
@@ -52,7 +52,7 @@ These assume that the access token has already been set.
 ```.js
 var hackerschool = require('hackerschool-api');
 
-var client = new hackerschool.Client();
+var client = hackerschool.client();
 
 // Get information about the currently authorized hackerschooler
 client.people.me()

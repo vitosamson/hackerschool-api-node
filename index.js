@@ -5,6 +5,11 @@
  */
 function Client() {
   this.token = null;
+  this.apiUrls = {
+    base: 'https://www.hackerschool.com/api/v1/',
+    batches: 'https://www.hackerschool.com/api/v1/batches/',
+    people: 'https://www.hackerschool.com/api/v1/people/'
+  };
 
   this.people = require('./lib/people')(this);
   this.batches = require('./lib/batches')(this);
@@ -19,6 +24,8 @@ Client.prototype.setToken = function(token) {
 };
 
 module.exports = {
-  Client: Client,
+  client: function() {
+    return new Client();
+  },
   auth: require('./lib/auth')
 };
