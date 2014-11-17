@@ -1,7 +1,17 @@
 'use strict';
 
+function Client() {
+  this.token = null;
+
+  this.people = require('./lib/people')(this);
+  this.batches = require('./lib/batches')(this);
+}
+
+Client.prototype.setToken = function(token) {
+  this.token = token;
+};
+
 module.exports = {
-  auth: require('./lib/auth'),
-  people: require('./lib/people'),
-  batches: require('./lib/batches')
+  Client: Client,
+  auth: require('./lib/auth')
 };
