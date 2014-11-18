@@ -1,6 +1,6 @@
 {
   "name": "hackerschool-api",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Node wrapper for Hacker School API, including OAuth flow",
   "main": "index.js",
   "scripts": {},
