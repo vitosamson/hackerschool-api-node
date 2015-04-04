@@ -6,9 +6,9 @@
 function Client() {
   this.token = null;
   this.apiUrls = {
-    base: 'https://www.hackerschool.com/api/v1/',
-    batches: 'https://www.hackerschool.com/api/v1/batches/',
-    people: 'https://www.hackerschool.com/api/v1/people/'
+    base: 'https://www.recurse.com/api/v1/',
+    batches: 'https://www.recurse.com/api/v1/batches/',
+    people: 'https://www.recurse.com/api/v1/people/'
   };
 
   this.people = require('./lib/people')(this);
